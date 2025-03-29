@@ -1,6 +1,14 @@
 # ETL Pipeline Using Apache Airflow
 
-I created **sales_etl_dag.py** and performed the basic steps. DAG defines were made and
+I created and ran an ETL (Extract, Transform, Load) process using Apache
+Airflow.
+
+First, I uploaded the necessary data to Docker via the terminal.
+- **PostgreSQL**
+- **Airflow**
+
+
+Created **sales_etl_dag.py** and performed the basic steps. DAG defines were made and
 here it is set to run every day during the night with `schedule_interval='0 0 * * *'`. However, it
 can be triggered manually. Additionally, with `catchup=False` it does not try to catch the old
 dates.
