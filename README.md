@@ -6,6 +6,7 @@ Airflow.
 First, I uploaded the necessary data to Docker via the terminal.
 - **PostgreSQL**
 - **Airflow**
+- **MySQL**
 
 
 Created **sales_etl_dag.py** and performed the basic steps. DAG defines were made and
