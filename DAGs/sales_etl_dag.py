@@ -23,8 +23,8 @@ def extract_postgres(**kwargs):
     ds = kwargs['ds']
     conn = psycopg2.connect(
         dbname='sales_db',
-        user='aleynakurt',
-        password='9701',
+        user='*****',
+        password='*****',
         host='host.docker.internal',
         port='5432'  
     )
@@ -80,8 +80,8 @@ transform_task = PythonOperator(
 def load_to_warehouse():
     conn = psycopg2.connect(
         dbname='warehouse_db',
-        user='aleynakurt',
-        password='9701',
+        user='*****',
+        password='*****',
         host='host.docker.internal',
         port='5432'
     )
